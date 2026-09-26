@@ -8,7 +8,7 @@
 # c = a + b
 # print(c)
 
-# print('''Halo saya Rendy
+# print('''Halo saya Hafizh
 # Saya suka belajar coding
 # Hari ini saya belajar bahasa pemrograman Python''')
 
@@ -44,7 +44,7 @@
 # nama = input("Masukan nama anda: ")
 # print(nama)
 
-a = 20
-b = 30
-c = a * b
-print(c)
+# a = 20
+# b = 30
+# c = a * b
+# print(c)
