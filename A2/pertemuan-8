@@ -1,0 +1,65 @@
+# # divmod(9,3) # (3, 0)
+# # abs(-10) # 10
+# # pow(3,2) # 9
+# # max([40, 77, 76]) # 77
+# # min([40, 77, 76]) # 40
+# # round(19.6741) # 20
+# # sum([81, 89, 73]) # 243
+
+# x = "Enam puluh tiga"
+
+
+# # def fungsi():
+# #     x = 63
+# #     y = 70
+# #     z = 50
+# #     print(globals()["x"])  # mendapatkan isi dari variabel x (global)
+# #     print(locals()["x"])  # mendapatkan isi dari variabel x (lokal)
+# #     print(locals())  # {'x': 63, 'y': 70, 'z': 50}
+
+
+# # fungsi()
+
+# "PYTHON".lower()  # "python"
+# "saya akan kembali ke desa".upper()  # "SAYA AKAN KEMBALI KE DESA"
+# " loh".strip()  # "loh"
+# "Aku suka praktikum".replace("suka", "cinta")  # Aku cinta praktikum
+# "A, B, C".split(",")  # ['A', 'B', 'C']
+# ",".join(["A", "B", "C"])  # A,B,C
+# "Karhutla".find("a")  # 1
+# "Karhutla".startswith("Ka")  # True
+# "Pahlawan Pemberantas Karhutla.pdf".endswith(".pdf")  # True
+
+# from prettytable import PrettyTable
+
+# # Membuat objek tabel dan menentukan nama-nama kolom
+# tabel = PrettyTable()
+# tabel.field_names = ["NIM", "Nama Mahasiswa", "Prodi"]
+# # Menambahkan satu baris data ke dalam tabel
+# tabel.add_row(["2609106001", "Andi Alarice", "Informatika"])
+# # Menambahkan beberapa baris data sekaligus menggunakan list di dalam list
+# tabel.add_rows(
+#     [
+#         ["2609106002", "Hammam Nopal", "Informatika"],
+#         ["2609106003", "Abimar LLM", "Sistem Informasi"],
+#     ]
+# )
+# # Mengatur perataan teks pada kolom tertentu ('l' = kiri, 'c' = tengah, 'r' = kanan)
+# tabel.align["Nama Mahasiswa"] = "l"
+# print(tabel)
+
+
+import inquirer
+
+# Menyusun daftar pertanyaan menu
+pertanyaan = [
+    inquirer.List(
+        "menu",
+        message="Pilih menu aplikasi",
+        choices=["Tambah Data", "Lihat Data", "Keluar"],
+    ),
+]
+# Menampilkan prompt di terminal dan menyimpan hasil pilihan
+jawaban = inquirer.prompt(pertanyaan)
+print(jawaban)  # Output berupa Dictionary, misal: {'menu': 'Tambah Data'}
+print(jawaban["menu"])  # Mengambil
